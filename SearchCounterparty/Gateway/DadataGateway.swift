@@ -37,8 +37,6 @@ final class DadataGateway {
                 return
             }
             
-            let decoder = JSONDecoder()
-            
             do {
                 let json = try JSONSerialization.jsonObject(with: data)
                 if let counterparties = Counterparty.fromResponse(from: json) {

@@ -15,7 +15,6 @@
 		372333932B05520B00C11616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372333912B05520B00C11616 /* Main.storyboard */; };
 		3723339F2B05526B00C11616 /* DadataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723339E2B05526B00C11616 /* DadataGateway.swift */; };
 		372333A32B05569700C11616 /* Counterparty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372333A22B05569700C11616 /* Counterparty.swift */; };
-		372333AA2B05677100C11616 /* DadataRestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372333A92B05677100C11616 /* DadataRestModel.swift */; };
 		372333AD2B05683300C11616 /* CounterpartyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372333AC2B05683300C11616 /* CounterpartyData.swift */; };
 		372333B02B05687E00C11616 /* Ownership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372333AF2B05687E00C11616 /* Ownership.swift */; };
 		372333B22B056E4800C11616 /* CounterpartyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372333B12B056E4800C11616 /* CounterpartyListViewController.swift */; };
@@ -34,7 +33,6 @@
 		372333942B05520B00C11616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3723339E2B05526B00C11616 /* DadataGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadataGateway.swift; sourceTree = "<group>"; };
 		372333A22B05569700C11616 /* Counterparty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counterparty.swift; sourceTree = "<group>"; };
-		372333A92B05677100C11616 /* DadataRestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadataRestModel.swift; sourceTree = "<group>"; };
 		372333AC2B05683300C11616 /* CounterpartyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterpartyData.swift; sourceTree = "<group>"; };
 		372333AF2B05687E00C11616 /* Ownership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ownership.swift; sourceTree = "<group>"; };
 		372333B12B056E4800C11616 /* CounterpartyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterpartyListViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				372333A72B0566CC00C11616 /* Entities */,
-				372333A82B0566DA00C11616 /* Responses */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,14 +141,6 @@
 				372333AB2B05681E00C11616 /* Counterparties */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		372333A82B0566DA00C11616 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				372333A92B05677100C11616 /* DadataRestModel.swift */,
-			);
-			path = Responses;
 			sourceTree = "<group>";
 		};
 		372333AB2B05681E00C11616 /* Counterparties */ = {
@@ -242,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372333AA2B05677100C11616 /* DadataRestModel.swift in Sources */,
 				372333B22B056E4800C11616 /* CounterpartyListViewController.swift in Sources */,
 				372333B02B05687E00C11616 /* Ownership.swift in Sources */,
 				3723338B2B05520A00C11616 /* SearchViewController.swift in Sources */,
