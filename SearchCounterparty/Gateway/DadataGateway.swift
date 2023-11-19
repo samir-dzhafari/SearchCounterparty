@@ -40,11 +40,8 @@ final class DadataGateway {
             let decoder = JSONDecoder()
             
             do {
-                let response = try decoder.decode(
-                    DadataRestModel.self,
-                    from: data
-                ) 
-                if let counterparties = response.suggestions {
+                let json = try JSONSerialization.jsonObject(with: data)
+                if let counterparties = Counterparty.fromResponse(from: json) {
                     completion(.success(counterparties))
                 } else {
                     completion(.failure(.responseKeyInvalid))

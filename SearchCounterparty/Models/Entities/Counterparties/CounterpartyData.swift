@@ -23,6 +23,13 @@ struct CounterpartyData: CustomStringConvertible {
         ОГРН: \(ogrn)\n
         """
     }
+    
+    init(value: [String: Any]) {
+        inn = value["inn"] as? String ?? ""
+        kpp = value["kpp"] as? String ?? nil
+        ogrn = value["ogrn"] as? String ?? nil
+        ownership = Ownership.fromString(value["type"] as? String ?? "")
+    }
 }
 
 extension CounterpartyData: Decodable {

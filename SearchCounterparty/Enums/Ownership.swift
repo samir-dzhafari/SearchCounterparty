@@ -19,4 +19,13 @@ enum Ownership: String, Decodable {
             "ИП"
         }
     }
+    
+    static func fromString(_ value: String) -> Ownership {
+        if let ownership = Ownership(rawValue: value) {
+            return ownership
+        } else {
+            return .legal
+        }
+    }
+        
 }
